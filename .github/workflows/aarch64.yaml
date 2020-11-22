@@ -1,5 +1,6 @@
 name: Build and Tests on AArch64
 on:
+  push:
   pull_request:
   schedule:
     - cron:  '0 15 * * 0'
@@ -28,6 +29,9 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
+      - run: docker run --rm --privileged multiarch/qemu-user-static:register --reset
+      - run: docker build --rm -t g_a_ci -f oclint-scripts/Dockerfiles/Dockerfile-aarch64-ubuntu-focal .
+      - run: docker run --name g_a_ci_job -t g_a_ci bash -c "cd oclint-scripts && ./gh-actions test core"
 #       - uses: uraimo/run-on-arch-action@v2.0.7
 #         with:
 #           arch: aarch64
