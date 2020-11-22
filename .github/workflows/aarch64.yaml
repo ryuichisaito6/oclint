@@ -6,14 +6,14 @@ on:
     - cron:  '0 15 * * 0'
 
 jobs:
-  tests:
-    strategy:
-      fail-fast: false
-      matrix:
-        module: ["core", "metrics", "rules core metrics", "reporters core", "driver core"]
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v1
+  # tests:
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       module: ["core", "metrics", "rules core metrics", "reporters core", "driver core"]
+  #   runs-on: ubuntu-20.04
+  #   steps:
+  #     - uses: actions/checkout@v1
 #       - uses: uraimo/run-on-arch-action@v2.0.7
 #         with:
 #           arch: aarch64
