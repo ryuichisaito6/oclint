@@ -18,10 +18,10 @@ def dev_version():
         return "src"
 
 def oclint_version():
-    return "22.02"
+    return "22.11"
 
 def oclint_dev_version():
     return oclint_version() + '.dev.' + dev_version()
 
 def llvm_version():
-    return "13.0.1"
+    return "15.0.x"

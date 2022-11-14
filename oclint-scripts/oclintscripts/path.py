@@ -69,10 +69,10 @@ class url:
     json_compilation_database = 'https://github.com/oclint/oclint-json-compilation-database.git'
     xcodebuild = 'https://github.com/oclint/oclint-xcodebuild.git'
 
-    clang_prebuilt_binary_for_macos = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang+llvm-13.0.1-x86_64-apple-darwin.tar.xz'
-    clang_prebuilt_binary_for_macos_arm64 = 'https://github.com/ryuichis/llvm-builder/releases/download/llvm-13.0.1/llvm-13.0.1-arm64-apple-darwin.tar.xz'
-    clang_prebuilt_binary_for_ubuntu_lts_20 = 'https://github.com/ryuichis/llvm-builder/releases/download/llvm-13.0.1/llvm-13.0.1-x86_64-linux-gnu-ubuntu-20.04.tar.xz'
-    clang_prebuilt_binary_for_ubuntu_lts_20_aarch64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang+llvm-13.0.1-aarch64-linux-gnu.tar.xz'
+    clang_prebuilt_binary_for_macos = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.3/clang+llvm-15.0.3-x86_64-apple-darwin.tar.xz'
+    clang_prebuilt_binary_for_macos_arm64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.4/clang+llvm-15.0.4-arm64-apple-darwin21.0.tar.xz'
+    clang_prebuilt_binary_for_ubuntu = 'https://github.com/ryuichis/llvm-builder/releases/download/llvm-13.0.1/llvm-13.0.1-x86_64-linux-gnu-ubuntu-20.04.tar.xz'
+    clang_prebuilt_binary_for_ubuntu_aarch64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.3/clang+llvm-15.0.3-aarch64-linux-gnu.tar.xz'
 
 def cd(dir_path):
     os.chdir(dir_path)
