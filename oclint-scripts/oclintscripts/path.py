@@ -70,9 +70,9 @@ class url:
     xcodebuild = 'https://github.com/oclint/oclint-xcodebuild.git'
 
     clang_prebuilt_binary_for_macos = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.3/clang+llvm-15.0.3-x86_64-apple-darwin.tar.xz'
-    clang_prebuilt_binary_for_macos_arm64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.4/clang+llvm-15.0.4-arm64-apple-darwin21.0.tar.xz'
-    clang_prebuilt_binary_for_ubuntu = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz'
-    clang_prebuilt_binary_for_ubuntu_aarch64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.3/clang+llvm-15.0.3-aarch64-linux-gnu.tar.xz'
+    clang_prebuilt_binary_for_macos_arm64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.6/clang+llvm-15.0.6-arm64-apple-darwin21.0.tar.xz'
+    clang_prebuilt_binary_for_ubuntu = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.6/clang+llvm-15.0.6-x86_64-linux-gnu-ubuntu-18.04.tar.xz'
+    clang_prebuilt_binary_for_ubuntu_aarch64 = 'https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.6/clang+llvm-15.0.6-aarch64-linux-gnu.tar.xz'
 
 def cd(dir_path):
     os.chdir(dir_path)
